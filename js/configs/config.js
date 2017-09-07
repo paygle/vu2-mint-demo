@@ -38,7 +38,9 @@ require.config({
 		"vue" : JSPATH + "/libs/vue",
 		"vuex" : JSPATH + "/libs/vuex",
 		"vueRouter" : JSPATH + "/libs/vue-router",
-		"MINT" : JSPATH + "/mint-ext"
+		"MINT" : JSPATH + "/mint-ext",
+		"storageCache":  JSPATH + "/utils/web-storage-cache",
+		"cacheUtil" : JSPATH + "/utils/cache-util"
 	}
 });
 
