@@ -7,7 +7,7 @@ define([
 return Vue.component('Panel', {
   template: tpl,
   componentName: 'Panel',
-  data(){
+  data: function(){
     return {}
   }
 });

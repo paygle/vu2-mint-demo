@@ -10,7 +10,7 @@ var captchaServletUrl = APP_CONFIG.API_URL + 'core/captcha', //验证码地址
 
 Vue.component('login', {
   template: tpl,
-  data() {
+  data: function() {
     return {
       username: '',
       email: '',
