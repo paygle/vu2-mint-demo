@@ -1,6 +1,6 @@
 define([
   'vue',
-  'text!demo/home/panel/main.tpl'
+  'text!demo/panel/main.tpl'
 ], function(Vue, tpl) {
   'use strict';
 

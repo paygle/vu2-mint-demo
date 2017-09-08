@@ -3,6 +3,10 @@
     <p> <img src="/img/logo.png" alt="静态资源加载"> </p>
     <p>本系统支持的字体图标</p> 
   </div>
+  <div style="padding: 10px;">
+    <a href="#/login">登录</a>
+    <a href="#/Panel">效果</a>
+  </div>
   <ul class="icon-list">
     <li><span><i class="mintui-search"></i>
       mintui-search

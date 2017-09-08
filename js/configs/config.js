@@ -1,8 +1,9 @@
 (function(){
+
 // 应用内基础配置
 window.APP_CONFIG = {
 	API_URL: "http://192.168.18.76:8080/demo-web/",
-	APP_PATH: "/"        // 配置自己的域名
+	APP_PATH: ""        // 配置自己的域名
 };
  
 // 初始化框架组件配置

@@ -11,7 +11,6 @@ var gulp = require('gulp'),
 var tasks = 
 [
   'js-jsc',
-  'public-jsc',
   'demo-jsc',
   'js-cssc',
   'css-cssc',
@@ -19,8 +18,7 @@ var tasks =
   'img-imgc',
   'js-copy',  
   'index-copy',  
-  'data-copy',  
-  'public-copy',  
+  'data-copy', 
   'demo-copy'
 ],
 
@@ -46,16 +44,6 @@ gulp.task('js-jsc', function (cb) {
       }))
     .pipe(notify(function(file){ msglog('Compress-JS: ', file); }))
     .pipe(gulp.dest('../dist/js'));
-});
-gulp.task('public-jsc', function (cb) {
-  return gulp.src('../public/**/*.js')
-    .pipe(uglify().on('error', function(err){
-      console.log(colorerr, 'Compress Error! ' + err.message);
-      console.dir(err);
-      this.end();
-    }))
-    .pipe(notify(function(file){ msglog('Compress-JS: ', file); }))
-    .pipe(gulp.dest('../dist/public'));
 });
 
 gulp.task('demo-jsc', function (cb) {
@@ -136,12 +124,6 @@ gulp.task('data-copy', function (cb) {
   return gulp.src([ '../data/**/*.json' ])
     .pipe(notify(function(file){ msglog('Copied-File: ', file); }))
     .pipe(gulp.dest('../dist/data'))
-});
-// public 目录
-gulp.task('public-copy', function (cb) {
-  return gulp.src([ '../public/**/*.html',  '../public/**/*.tpl' ])
-    .pipe(notify(function(file){ msglog('Copied-File: ', file); }))
-    .pipe(gulp.dest('../dist/public'))
 });
 // demo 目录
 gulp.task('demo-copy', function (cb) {

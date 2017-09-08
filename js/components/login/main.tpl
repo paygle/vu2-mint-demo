@@ -1,4 +1,6 @@
 <div class="login-box">
+  <div class="logo"><img src="img/logo.png" alt="logo"></div>
+  <router-link to="welcome">To welcome</router-link>
   <div class="login-label">用户注册</div>
   <mt-field label="用户名" placeholder="请输入用户名" v-model="username"></mt-field>
   <mt-field label="邮箱" placeholder="请输入邮箱" type="email" v-model="email"></mt-field>
