@@ -1,38 +1,85 @@
 <div class="bt-welcome">
   <div class="welcome">
-    <p> <img src="/img/logo.png" alt="静态资源加载"> </p>
-    <p>本系统支持的字体图标</p> 
+    <p> <img src="img/logo.png" alt="静态资源加载"> </p>
+    <p>本系统支持的字体图标</p>
   </div>
   <div style="padding: 10px;">
     <a href="#/login">登录</a>
     <a href="#/Panel">效果</a>
   </div>
   <ul class="icon-list">
-    <li><span><i class="mintui-search"></i>
-      mintui-search
-    </span></li><li><span><i class="mintui-more"></i>
-      mintui-more
-    </span></li><li><span><i class="mintui-back"></i>
-      mintui-back
-    </span></li><li><span><i class="mintui-field-error"></i>
-      mintui-field-error
-    </span></li><li><span><i class="mintui-field-warning"></i>
-      mintui-field-warning
-    </span></li><li><span><i class="mintui-success"></i>
-      mintui-success
-    </span></li><li><span><i class="mintui-field-success"></i>
-      mintui-field-success
-    </span></li><li><span><i class="mintui-person"></i>
-      mintui-person
-    </span></li><li><span><i class="mintui-category"></i>
-      mintui-category
-    </span></li><li><span><i class="mintui-shop-cart"></i>
-      mintui-shop-cart
-    </span></li><li><span><i class="mintui-home"></i>
-      mintui-home
-    </span></li><li><span><i class="mintui-shop-around"></i>
-      mintui-shop-around
-    </span></li>
- 
+    <li><span><i class="mintui-search"></i> mintui-search </span></li>
+    <li><span><i class="mintui-more"></i> mintui-more </span></li>
+    <li><span><i class="mintui-back"></i> mintui-back </span></li>
+    <li><span><i class="mintui-field-error"></i> mintui-field-error </span></li>
+    <li><span><i class="mintui-field-warning"></i> mintui-field-warning </span></li>
+    <li><span><i class="mintui-success"></i> mintui-success </span></li>
+    <li><span><i class="mintui-field-success"></i> mintui-field-success </span></li>
+    <li><span><i class="mintui-person"></i> mintui-person </span></li>
+    <li><span><i class="mintui-category"></i> mintui-category </span></li>
+    <li><span><i class="mintui-shop-cart"></i> mintui-shop-cart </span></li>
+    <li><span><i class="mintui-home"></i> mintui-home </span></li>
+    <li><span><i class="mintui-shop-around"></i> mintui-shop-around </span></li>
+    <li><span><i class="mintui-bsearch"></i> mintui-bsearch </span></li>
+    <li><span><i class="mintui-circle"></i> mintui-circle </span></li>
+    <li><span><i class="mintui-piehook"></i> mintui-piehook </span></li>
+    <li><span><i class="mintui-cmedit"></i> mintui-cmedit </span></li>
+    <li><span><i class="mintui-hook"></i> mintui-hook </span></li>
+    <li><span><i class="mintui-delete"></i> mintui-delete </span></li>
+    <li><span><i class="mintui-calculate"></i> mintui-calculate </span></li>
+    <li><span><i class="mintui-statpie"></i> mintui-statpie </span></li>
+    <li><span><i class="mintui-upbxarrow"></i> mintui-upbxarrow </span></li>
+    <li><span><i class="mintui-circlepie"></i> mintui-circlepie </span></li>
+    <li><span><i class="mintui-cirleft"></i> mintui-cirleft </span></li>
+    <li><span><i class="mintui-cirright"></i> mintui-cirright </span></li>
+    <li><span><i class="mintui-paper"></i> mintui-paper </span></li>
+    <li><span><i class="mintui-unscar"></i> mintui-unscar </span></li>
+    <li><span><i class="mintui-inscar"></i> mintui-inscar </span></li>
+    <li><span><i class="mintui-location"></i> mintui-location </span></li>
+    <li><span><i class="mintui-cirplus"></i> mintui-cirplus </span></li>
+    <li><span><i class="mintui-cirhook"></i> mintui-cirhook </span></li>
+    <li><span><i class="mintui-cirtime"></i> mintui-cirtime </span></li>
+    <li><span><i class="mintui-cutcircle"></i> mintui-cutcircle </span></li>
+    <li><span><i class="mintui-cirdwarrow"></i> mintui-cirdwarrow </span></li>
+    <li><span><i class="mintui-facepen"></i> mintui-facepen </span></li>
+    <li><span><i class="mintui-rmbedit"></i> mintui-rmbedit </span></li>
+    <li><span><i class="mintui-notedit"></i> mintui-notedit </span></li>
+    <li><span><i class="mintui-cirdwup"></i> xxxx </span></li>
+    <li><span><i class="mintui-noredit"></i> mintui-noredit </span></li>
+    <li><span><i class="mintui-disconnect"></i> mintui-disconnect </span></li>
+    <li><span><i class="mintui-notergtarw"></i> mintui-notergtarw </span></li>
+    <li><span><i class="mintui-htwoleftarw"></i> mintui-htwoleftarw </span></li>
+    <li><span><i class="mintui-htwohook"></i> mintui-htwohook </span></li>
+    <li><span><i class="mintui-thwofork"></i> mintui-thwofork </span></li>
+    <li><span><i class="mintui-circlemsg"></i> mintui-circlemsg </span></li>
+    <li><span><i class="mintui-notesearch"></i> mintui-notesearch </span></li>
+    <li><span><i class="mintui-displayer"></i> mintui-displayer </span></li>
+    <li><span><i class="mintui-gearcircle"></i> mintui-gearcircle </span></li> 
+    <li><span><i class="mintui-staffswitch"></i> mintui-staffswitch </span></li>
+    <li><span><i class="mintui-closeye"></i> mintui-closeye </span></li>
+    <li><span><i class="mintui-openeye"></i> mintui-openeye </span></li>
+    <li><span><i class="mintui-lock"></i> mintui-lock </span></li>
+    <li><span><i class="mintui-piefork"></i> mintui-piefork </span></li>
+    <li><span><i class="mintui-staff"></i> mintui-staff </span></li>
+    <li><span><i class="mintui-person"></i> mintui-person </span></li>
+    <li><span><i class="mintui-flag"></i> mintui-flag </span></li>
+    <li><span><i class="mintui-aimpoint"></i> mintui-aimpoint </span></li>
+    <li><span><i class="mintui-locaway"></i> mintui-locaway </span></li>
+    <li><span><i class="mintui-fournote"></i> mintui-fournote </span></li>
+    <li><span><i class="mintui-noteup"></i> mintui-noteup </span></li>
+    <li><span><i class="mintui-downhook"></i> mintui-downhook </span></li>
+    <li><span><i class="mintui-openweye"></i> mintui-openweye </span></li>
+    <li><span><i class="mintui-image"></i> mintui-image </span></li>
+    <li><span><i class="mintui-telephone"></i> mintui-telephone </span></li>
+    <li><span><i class="mintui-camera"></i> mintui-camera </span></li>
+    <li><span><i class="mintui-paperdwroll"></i> mintui-paperdwroll </span></li>
+    <li><span><i class="mintui-arrowright"></i> mintui-arrowright </span></li>
+    <li><span><i class="mintui-circleright"></i> mintui-circleright </span></li>
+    <li><span><i class="mintui-recthook"></i> mintui-recthook </span></li>
+    <li><span><i class="mintui-bigplus"></i> mintui-bigplus </span></li>
+    <li><span><i class="mintui-notehook"></i> mintui-notehook </span></li>
+    <li><span><i class="mintui-circledhash"></i> mintui-circledhash </span></li>
+    <li><span><i class="mintui-cirbreakhook"></i> mintui-cirbreakhook </span></li>
+
   </ul>
 </div>
