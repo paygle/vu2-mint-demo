@@ -1,10 +1,11 @@
 define([
   'vue',
+  'MINT',
   'text!demo/indicator/main.tpl'
-], function(Vue, tpl) {
+], function(Vue, MINT, tpl) {
   'use strict';
 
-return Vue.component('Andicator', {
+return Vue.component('PageIndicator', {
   template: tpl,
   methods: {
     openIndicator: function() {

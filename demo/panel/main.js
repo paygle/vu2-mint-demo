@@ -4,7 +4,7 @@ define([
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('Panel', {
+return Vue.component('PagePanel', {
   template: tpl,
   componentName: 'Panel',
   data: function(){

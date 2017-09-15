@@ -1,17 +1,11 @@
 define([
   'vue',
-  'text!demo/action-sheet/main.tpl'
+  'text!demo/swipe/main.tpl'
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('ActionSheet', {
-  template: tpl,
-  data: function(){
-    return {
-
-    };
-  }
-  
+return Vue.component('PageSwipe', {
+  template: tpl
 });
 
 });

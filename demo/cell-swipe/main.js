@@ -1,12 +1,14 @@
 define([
   'vue',
+  'MINT',
   'text!demo/cell-swipe/main.tpl'
-], function(Vue, tpl) {
+], function(Vue, MINT, tpl) {
   'use strict';
 
-return Vue.component('CellSwipe', {
+return Vue.component('PageCellSwipe', {
   template: tpl,
   created: function() {
+    var that = this;
     this.rightButtons = [
       {
         content: 'Mark as Unread',
@@ -15,7 +17,9 @@ return Vue.component('CellSwipe', {
       {
         content: 'Delete',
         style: { background: 'red', color: '#fff' },
-        handler: function (){ this.$messagebox('delete') }
+        handler: function (){ 
+          that.$messagebox('delete') 
+        }
       }
     ];
   },

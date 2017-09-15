@@ -1,10 +1,11 @@
 define([
   'vue',
+  'MINT',
   'text!demo/datetime-picker/main.tpl'
-], function(Vue, tpl) {
+], function(Vue, MINT, tpl) {
   'use strict';
 
-return Vue.component('DatetimePicker', {
+return Vue.component('PageDatetimePicker', {
   template: tpl,
   data: function(){
     return {

@@ -4,8 +4,11 @@ define([
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('Cell', {
-  template: tpl
+return Vue.component('PageCell', {
+  template: tpl,
+  mounted:function(){
+    debugger
+  }
 });
 
 });

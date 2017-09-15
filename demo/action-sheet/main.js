@@ -4,7 +4,7 @@ define([
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('ActionSheet', {
+return Vue.component('PageActionSheet', {
   template: tpl,
   data: function(){
     return {

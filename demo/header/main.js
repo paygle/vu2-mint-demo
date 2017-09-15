@@ -4,7 +4,7 @@ define([
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('Header', {
+return Vue.component('PageHeader', {
   template: tpl,
   methods: {
     handleClose: function() {

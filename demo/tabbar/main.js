@@ -1,14 +1,14 @@
 define([
   'vue',
-  'text!demo/action-sheet/main.tpl'
+  'text!demo/tabbar/main.tpl'
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('ActionSheet', {
+return Vue.component('PageTabbar', {
   template: tpl,
   data: function(){
     return {
-
+      selected: '外卖'
     };
   }
   

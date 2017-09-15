@@ -1,15 +1,32 @@
 define([
   'vue',
-  'text!demo/action-sheet/main.tpl'
-], function(Vue, tpl) {
+  'MINT',
+  'text!demo/message-box/main.tpl'
+], function(Vue, MINT, tpl) {
   'use strict';
 
-return Vue.component('ActionSheet', {
+return Vue.component('PageMessageBox', {
   template: tpl,
-  data: function(){
-    return {
+  methods: {
+    openAlert: function() {
+      MINT.MessageBox.alert('操作成功!', '提示');
+    },
 
-    };
+    openConfirm: function() {
+      MINT.MessageBox.confirm('确定执行此操作?', '提示');
+    },
+
+    openPrompt: function() {
+      MINT.MessageBox.prompt(' ', '请输入姓名').then(function(o){
+        debugger
+        // o.action =  confirm | 
+        if (o.value) {
+          MessageBox.alert(`你的名字是 ${ value }`, '输入成功');
+        }
+      }).then(function(o){
+        debugger
+      });
+    }
   }
   
 });

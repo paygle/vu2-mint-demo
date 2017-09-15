@@ -4,7 +4,7 @@ define([
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('Checklist', {
+return Vue.component('PageChecklist', {
   template: tpl,
   data: function() {
     return {

@@ -4,7 +4,7 @@ define([
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('Field', {
+return Vue.component('PageField', {
   template: tpl
 });
 

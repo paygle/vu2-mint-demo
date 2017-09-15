@@ -1,14 +1,14 @@
 define([
   'vue',
-  'text!demo/action-sheet/main.tpl'
+  'text!demo/navbar/main.tpl'
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('ActionSheet', {
+return Vue.component('PageNavbar', {
   template: tpl,
   data: function(){
     return {
-
+      selected: '1'
     };
   }
   

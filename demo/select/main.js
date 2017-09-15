@@ -1,14 +1,14 @@
 define([
   'vue',
-  'text!demo/action-sheet/main.tpl'
+  'text!demo/select/main.tpl'
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('ActionSheet', {
+return Vue.component('PageSelect', {
   template: tpl,
   data: function(){
     return {
-
+      select: ''
     };
   }
   

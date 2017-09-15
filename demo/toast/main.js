@@ -1,15 +1,30 @@
 define([
   'vue',
-  'text!demo/action-sheet/main.tpl'
-], function(Vue, tpl) {
+  'MINT',
+  'text!demo/toast/main.tpl'
+], function(Vue, MINT, tpl) {
   'use strict';
 
-return Vue.component('ActionSheet', {
+return Vue.component('PageToast', {
   template: tpl,
-  data: function(){
-    return {
+  methods: {
+    openToast: function() {
+      MINT.Toast('提示信息');
+    },
 
-    };
+    openToastWithIcon: function() {
+      MINT.Toast({
+        message: '操作成功',
+        iconClass: 'mintui mintui-success'
+      });
+    },
+
+    openBottomToast: function() {
+      MINT.Toast({
+        message: '提示信息',
+        position: 'bottom'
+      });
+    }
   }
   
 });

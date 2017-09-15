@@ -32,7 +32,7 @@
 
   <div class="page-button-group">
     <mt-button>
-      <img src="../assets/100x100.png" height="20" width="20" slot="icon">
+      <img src="../img/100x100.png" height="20" width="20" slot="icon">
       带自定义图标
     </mt-button>
   </div>

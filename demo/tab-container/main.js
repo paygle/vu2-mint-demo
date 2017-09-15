@@ -1,14 +1,14 @@
 define([
   'vue',
-  'text!demo/action-sheet/main.tpl'
+  'text!demo/tab-container/main.tpl'
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('ActionSheet', {
+return Vue.component('PageTabContainer', {
   template: tpl,
   data: function(){
     return {
-
+      active: 'tab-container1'
     };
   }
   

@@ -1,15 +1,24 @@
 define([
   'vue',
-  'text!demo/action-sheet/main.tpl'
+  'text!demo/switch/main.tpl'
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('ActionSheet', {
+return Vue.component('PageSwitch', {
   template: tpl,
   data: function(){
     return {
-
+      value1: false,
+      value2: false,
+      value3: true,
+      value4: true
     };
+  },
+  
+  methods: {
+    handleChange: function(event) {
+      console.log(event);
+    }
   }
   
 });

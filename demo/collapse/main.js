@@ -5,7 +5,7 @@ define([
 ], function(Vue, tpl) {
   'use strict';
 
-return Vue.component('Collapse', {
+return Vue.component('PageCollapse', {
   template: tpl,
   data: function(){
     return {
