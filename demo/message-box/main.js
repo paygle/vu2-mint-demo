@@ -18,13 +18,11 @@ return Vue.component('PageMessageBox', {
 
     openPrompt: function() {
       MINT.MessageBox.prompt(' ', '请输入姓名').then(function(o){
-        debugger
+
         // o.action =  confirm | 
         if (o.value) {
           MessageBox.alert(`你的名字是 ${ value }`, '输入成功');
         }
-      }).then(function(o){
-        debugger
       });
     }
   }

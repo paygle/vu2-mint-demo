@@ -5,10 +5,7 @@ define([
   'use strict';
 
 return Vue.component('PageCell', {
-  template: tpl,
-  mounted:function(){
-    debugger
-  }
+  template: tpl
 });
 
 });
