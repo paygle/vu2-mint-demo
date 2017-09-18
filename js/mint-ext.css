@@ -12,7 +12,7 @@ html, body{
 
 /* 字体样式 */
 @font-face {font-family: "mintui";
-  src: url(assets/iconfont.ttf)
+  src: url(assert/iconfont.ttf)
 }
 
 .mintui, [class*=mintui-] {
@@ -2152,4 +2152,36 @@ display: inline-block;
             transform: translate3d(0, 0, 0);
     -webkit-transition: all .2s ease-in 50ms;
     transition: all .2s ease-in 50ms;
+}
+/* Cell Component */
+/* Header Component */
+/* Button Component */
+/* Tab Item Component */
+/* Tabbar Component */
+/* Navbar Component */
+/* Checklist Component */
+/* Radio Component */
+/* z-index */
+.mo-circle-step {
+    position: relative;
+    overflow: hidden;
+}
+.mo-circle-step canvas {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+}
+.mo-circle-step a {
+    position: relative;
+    z-index: 10;
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+.mo-circle-step a span {
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
 }

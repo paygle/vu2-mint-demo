@@ -39,7 +39,8 @@ define([
   'demo/checklist/main',
   'demo/radio/main',
   'demo/field/main',
-  'demo/badge/main'
+  'demo/badge/main',
+  'demo/circle-step/main'
 ], function(
   Vue, 
   MINT,
@@ -80,7 +81,8 @@ define([
   Checklist,
   Radio,
   Field,
-  Badge
+  Badge,
+  CircleStep
 ) {
   'use strict';
   Vue.use(MINT); //使用框架组件
@@ -206,6 +208,11 @@ var router = new VueRouter({
       path: "/palette-button",
       component: PaletteButton,
       name: "palette-button"
+    },
+    {
+      "path": "/circle-step",
+      "name": "circle-step",
+      "component": CircleStep
     },
     {
       path: "/header",

@@ -103,6 +103,11 @@ return Vue.component('PageHome', {
           "title": "CSS Components",
           "list": [
             {
+              "path": "/circle-step",
+              "name": "Circle Step",
+              "icon": "cell"
+            },
+            {
               "path": "/header",
               "name": "Header",
               "icon": "header"
