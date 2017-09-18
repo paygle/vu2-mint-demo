@@ -12,7 +12,7 @@ html, body{
 
 /* 字体样式 */
 @font-face {font-family: "mintui";
-  src: url(assert/iconfont.ttf)
+  src: url(assets/iconfont.ttf)
 }
 
 .mintui, [class*=mintui-] {
