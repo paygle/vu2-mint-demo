@@ -9,6 +9,7 @@ return Vue.component('PageSearch', {
   data: function(){
     return {
       value: '',
+      loading: false,
       defaultResult: [
         'Apple',
         'Banana',
@@ -26,17 +27,35 @@ return Vue.component('PageSearch', {
         'Pear',
         'Peanut',
         'Other'
-      ]
+      ],
+      
+      // defaultResult: [
+      //   {'Apple': 1 },
+      //   {'Banana': 2 },
+      //   {'Orange': 3 },
+      //   {'Durian': 4 },
+      //   {'Lemon': 5 },
+      //   {'Peach': 6 },
+      //   {'Cherry': 7 },
+      //   {'Berry': 8 },
+      //   {'Core': 9 },
+      //   {'Fig': 10 },
+      //   {'Haw': 11 },
+      //   {'Melon': 12 },
+      //   {'Plum': 13 },
+      //   {'Pear': 14 },
+      //   {'Peanut': 15 },
+      //   {'Other': 16 }
+      // ]
     };
   },
-  
-  computed: {
-    filterResult: function() {
-      var that = this;
-      var result = this.defaultResult.filter(function(value) {
-        return new RegExp(that.value, 'i').test(value);
-      });
-      return result;
+
+  methods: {
+    query: function(val, filter, isloading) {
+      setTimeout(()=>{
+        this.loading = false; 
+      }, 2000);
+      return filter(this.defaultResult, val);
     }
   }
   

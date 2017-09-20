@@ -76,6 +76,7 @@
     <li><span><i class="mintui-notehook"></i> mintui-notehook </span></li>
     <li><span><i class="mintui-circledhash"></i> mintui-circledhash </span></li>
     <li><span><i class="mintui-cirbreakhook"></i> mintui-cirbreakhook </span></li>
+    <li><span><i class="mintui-loading"></i> mintui-loading </span></li>
 
   </ul>
 </div>
