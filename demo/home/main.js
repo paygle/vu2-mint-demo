@@ -10,13 +10,33 @@ return Vue.component('PageHome', {
     return {
       navs: [
         {
-          "title": "JS Components",
+          "title": "框架组提供",
           "list": [
+            {
+              "path": "/welcome",
+              "name": "字体图标展示",
+              "icon": "cell"
+            },
             {
               "path": "/collapse",
               "name": "Collapse",
               "icon": "cell"
             },
+            {
+              "path": "/circle-step",
+              "name": "Circle Step",
+              "icon": "cell"
+            },
+            {
+              "path": "/select",
+              "name": "Select",
+              "icon": "cell"
+            }
+          ]
+        },
+        {
+          "title": "JS Components",
+          "list": [
             {
               "path": "/toast",
               "name": "Toast",
@@ -103,11 +123,6 @@ return Vue.component('PageHome', {
           "title": "CSS Components",
           "list": [
             {
-              "path": "/circle-step",
-              "name": "Circle Step",
-              "icon": "cell"
-            },
-            {
               "path": "/header",
               "name": "Header",
               "icon": "header"
@@ -157,11 +172,6 @@ return Vue.component('PageHome', {
         {
           "title": "Form Components",
           "list": [
-            {
-              "path": "/select",
-              "name": "Select",
-              "icon": "cell"
-            },
             {
               "path": "/switch",
               "name": "Switch",

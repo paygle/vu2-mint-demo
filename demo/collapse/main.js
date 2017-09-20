@@ -11,6 +11,11 @@ return Vue.component('PageCollapse', {
     return {
       collapse: [0]
     };
+  },
+  methods: {
+    modify: function() {
+      this.collapse = [1, 2];
+    }
   }
   
 });

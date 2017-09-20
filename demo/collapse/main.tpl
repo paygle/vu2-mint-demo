@@ -1,6 +1,7 @@
 <div class="page-collapse">
   <h1 class="page-title">collapse</h1>
   <div class="page-collapse-wrapper">
+    <mt-button @click="modify">修改折叠值</mt-button>
     <mo-collapse v-model="collapse">
       <mo-collapse-item>
         <div slot="title">Vue 从根本上采用最小成本</div>
