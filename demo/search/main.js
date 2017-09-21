@@ -6,7 +6,7 @@ define([
 
 /**
  * Search 组件属性
- * @attr {function} query - 查询结果 参数：(val, filterResult, setLoading)
+ * @attr {function} query - 查询结果 参数：(val, filterResult)
  * @attr {number} [delay=500] - 延时查询时间 ms
  * @attr {boolean} [loading=false] - 是否显示 loading 图标
  * @attr {boolean} [list-none=false] - 是停用列表
@@ -64,11 +64,11 @@ return Vue.component('PageSearch', {
   },
 
   methods: {
-    query: function(val, filter, isloading) {
+    query: function(val, filter) {
       setTimeout(()=>{
         this.loading = false; 
       }, 2000);
-      return filter(this.defaultResult, val);
+      filter(this.defaultResult, val);
     }
   }
   
