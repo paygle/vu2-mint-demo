@@ -2,6 +2,7 @@ html, body {
   background-color: #fafafa;
   -webkit-overflow-scrolling: touch;
   user-select: none;
+  height: 100%;
 }
 
 body{

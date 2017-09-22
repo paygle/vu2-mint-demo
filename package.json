@@ -30,7 +30,6 @@
     "gulp-uglify": "^3.0.0",
     "jshint": "^2.9.5",
     "minimist": "^1.2.0",
-    "my-local-ip": "^1.0.0",
     "opn": "^5.1.0",
     "shelljs": "^0.7.8"
   }
