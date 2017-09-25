@@ -41,6 +41,7 @@ require.config({
 		"vueRouter" : JSPATH + "/libs/vue-router",
 		"validator": JSPATH + "/libs/validator",
 		"MINT" : JSPATH + "/mint-ext",
+		"xtool" : JSPATH + "/utils/xtool",
 		"storageCache":  JSPATH + "/utils/web-storage-cache",
 		"cacheUtil" : JSPATH + "/utils/cache-util"
 	}
