@@ -2,17 +2,25 @@ define(function(require, exports, module) {
   'use strict';
   
   var hasOwnProperty = Object.prototype.hasOwnProperty;
-  module.export = {
+  module.exports = {
 
     hasOwn: function(obj, key) {
       return hasOwnProperty.call(obj, key);
     },
   
-    extend: function(to, _from) {
-      for (var key in _from) {
-        to[key] = _from[key];
+    merge: function (target) {
+      for (let i = 1, j = arguments.length; i < j; i++) {
+        let source = arguments[i] || {};
+        for (let prop in source) {
+          if (source.hasOwnProperty(prop)) {
+            let value = source[prop];
+            if (value !== undefined) {
+              target[prop] = value;
+            }
+          }
+        }
       }
-      return to;
+      return target;
     },
   
     toObject: function(arr) {
