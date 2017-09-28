@@ -31,6 +31,11 @@ return Vue.component('PageHome', {
               "path": "/select",
               "name": "Select",
               "icon": "cell"
+            },
+            {
+              "path": "/address",
+              "name": "address",
+              "icon": "cell"
             }
           ]
         },

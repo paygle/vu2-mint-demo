@@ -40,7 +40,8 @@ define([
   'demo/radio/main',
   'demo/field/main',
   'demo/badge/main',
-  'demo/circle-step/main'
+  'demo/circle-step/main',
+  'demo/address/main'
 ], function(
   Vue, 
   MINT,
@@ -82,7 +83,8 @@ define([
   Radio,
   Field,
   Badge,
-  CircleStep
+  CircleStep,
+  Address
 ) {
   'use strict';
   Vue.use(MINT); //使用框架组件
@@ -288,6 +290,11 @@ var router = new VueRouter({
       path: "/badge",
       component: Badge,
       name: "badge"
+    },
+    {
+      path: "/address",
+      component: Address,
+      name: "address"
     }
   ]
 });
