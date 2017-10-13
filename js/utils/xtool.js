@@ -7,15 +7,49 @@ define(function(require, exports, module) {
     hasOwn: function(obj, key) {
       return hasOwnProperty.call(obj, key);
     },
-  
+    // 对象合并
     merge: function (target) {
-      for (let i = 1, j = arguments.length; i < j; i++) {
-        let source = arguments[i] || {};
-        for (let prop in source) {
+      for (var i = 1, j = arguments.length; i < j; i++) {
+        var source = arguments[i] || {};
+        for (var prop in source) {
           if (source.hasOwnProperty(prop)) {
-            let value = source[prop];
+            var value = source[prop];
             if (value !== undefined) {
               target[prop] = value;
+            }
+          }
+        }
+      }
+      return target;
+    },
+    // 数组合并除去相同数据，仅用于 [{...}, {...}, ...] 格式数据值对象元素中的值为简单类型的数组 
+    mergeArray: function (target) {
+      var ta, source, cell, tmpTarget, eqCell = [], value, isEql = false;
+      for (var i = 1, j = arguments.length; i < j; i++) {
+        source = arguments[i] || [];
+        if (Array.isArray(source) && Array.isArray(target)) {
+          for (var k=0; k < source.length; k++) {
+            cell = source[k] || {};
+            tmpTarget = JSON.parse(JSON.stringify(target));
+            for (var prop in cell) {
+              if (cell.hasOwnProperty(prop)) {
+                for (var g=0; g < tmpTarget.length; g++) {
+                  ta = tmpTarget[g] || {}; 
+                  if (
+                    ta.hasOwnProperty(prop) && 
+                    cell[prop] === ta[prop] || 
+                    tmpTarget.indexOf(ta) === -1
+                  ) {
+                    eqCell.push(ta);
+                  }
+                }
+                tmpTarget = eqCell;
+                eqCell = [];
+              }
+            }
+            // push new data
+            if (tmpTarget.length === 0) {
+              target.push(cell);
             }
           }
         }

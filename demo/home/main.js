@@ -1,8 +1,10 @@
 define([
   'vue',
-  'text!demo/home/main.tpl'
-], function(Vue, tpl) {
+  'text!demo/home/main.tpl',
+  'js/utils/xtool'
+], function(Vue, tpl, xtool) {
   'use strict';
+var mergeArray = xtool.mergeArray;
 
 return Vue.component('PageHome', {
   template: tpl,
@@ -206,6 +208,15 @@ return Vue.component('PageHome', {
         }
       ]
     };
+  },
+  mounted() {
+    var arr1 = [{a: 1, b: 2, d: 5}];
+    var arr2 = [{a: 3, b: 2, d: 5}];
+    var arr3 = mergeArray(arr1, arr2, [{a:1, b:2}]);
+
+    console.log('数组1', arr1);
+    console.log('数组2', arr2);
+    console.log('数组合并', arr3);
   }
 });
 

@@ -2,25 +2,26 @@
   <h1 class="page-title">select</h1>
   <div class="page-select-wrapper">
 
-    <mo-select label="类型1" placeholder="请选择" v-model="select1">
+    <mo-select label="选项" v-model="select" placeholder="请输入" :options-data="options">
       <mo-option val="1" label="选项1"></mo-option>
       <mo-option val="2" label="选项2"></mo-option>
       <mo-option val="3" label="选项3"></mo-option>
     </mo-select>
 
-    <mo-select 
-      label="类型2"
-      placeholder="请选择"
-      v-model="select2"  
-      :options-data="options">
+    <mo-select
+      label="参数" 
+      placeholder="请输入类型"  
+      v-model="selectp" 
+      :fill-options="fillParamOptions">
     </mo-select>
-    
-    <mo-select 
-      label="类型3" 
-      placeholder="请选择类型"  
-      v-model="select3" 
+
+    <mo-select
+      label="类型" 
+      placeholder="请输入类型"  
+      v-model="selectM" 
       :fill-options="fillOptions" 
-      fill-params="xxx">
+      :fill-params="combParam">
     </mo-select>
+
   </div>
 </div>

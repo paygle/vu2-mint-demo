@@ -17,9 +17,9 @@ return Vue.component('PageSelect', {
   template: tpl,
   data: function(){
     return {
-      select1: '1',
-      select2: '1',
-      select3: '1',
+      select: '2',
+      selectp: '',
+      selectM: '',
       options: [
         {value: '1', label: '11111'},
         {value: '2', label: '22222'},
@@ -29,16 +29,35 @@ return Vue.component('PageSelect', {
       ]
     };
   },
+  computed: {
+    combParam: function() {
+      return {key: this.select, key2: this.selectp};
+    }
+  },
   methods: {
-    fillOptions(param) {
-      console.log('PARAM:', param);
+    fillParamOptions: function(param) {
+      console.log('PARAM1:', param);
       return [
-        {value: '1', label: '11111'},
-        {value: '2', label: '22222'},
-        {value: '3', label: '33333'},
-        {value: '4', label: '44444'},
-        {value: '5', label: '55555'}
+        {value: '1', label: 'B11111'},
+        {value: '2', label: 'B22222'},
+        {value: '3', label: 'B33333'},
+        {value: '4', label: 'B44444'},
+        {value: '5', label: 'B55555'}
       ];
+    },
+    fillOptions: function(param) {
+      console.log('PARAM2:', param);
+      if (param.key === '1' && param.key2 === '1') {
+        return [
+          {value: '', label: '没有'},
+          {value: '1', label: 'B11111'},
+          {value: '2', label: 'B22222'},
+          {value: '3', label: 'B33333'},
+          {value: '4', label: 'B44444'},
+          {value: '5', label: 'B55555'}
+        ];
+      }
+      return [];
     }
   }
   

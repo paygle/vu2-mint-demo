@@ -17,8 +17,9 @@ return Vue.component('PageCellSwipe', {
       {
         content: 'Delete',
         style: { background: 'red', color: '#fff' },
-        handler: function (){ 
-          that.$messagebox('delete') 
+        handler: function (e, p){ 
+          that.$messagebox('delete');
+          console.log('PARAM:', e, p);
         }
       }
     ];

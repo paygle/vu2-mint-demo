@@ -4,7 +4,7 @@ define([
   'text!data/address-data.json'
 ], function(Vue, tpl, addrData) {
   'use strict';
-console.log('Data:', addrData);
+// console.log('Data:', addrData);
 /** mo-address 地址选择组件属性
  * 
     data  [Array]                         // 地址数据
