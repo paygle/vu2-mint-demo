@@ -38,6 +38,16 @@ return Vue.component('PageHome', {
               "path": "/address",
               "name": "address",
               "icon": "cell"
+            },
+            {
+              "path": "/poplist",
+              "name": "Poplist",
+              "icon": "cell"
+            },
+            {
+              "path": "/upload",
+              "name": "Upload",
+              "icon": "cell"
             }
           ]
         },

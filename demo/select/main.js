@@ -35,29 +35,31 @@ return Vue.component('PageSelect', {
     }
   },
   methods: {
-    fillParamOptions: function(param) {
+    fillParamOptions: function(getOptions, param) {
       console.log('PARAM1:', param);
-      return [
+      getOptions([
         {value: '1', label: 'B11111'},
         {value: '2', label: 'B22222'},
         {value: '3', label: 'B33333'},
         {value: '4', label: 'B44444'},
         {value: '5', label: 'B55555'}
-      ];
+      ]);
     },
-    fillOptions: function(param) {
+    fillOptions: function(getOptions, param) {
       console.log('PARAM2:', param);
+      
       if (param.key === '1' && param.key2 === '1') {
-        return [
+        getOptions([
           {value: '', label: '没有'},
           {value: '1', label: 'B11111'},
           {value: '2', label: 'B22222'},
           {value: '3', label: 'B33333'},
           {value: '4', label: 'B44444'},
           {value: '5', label: 'B55555'}
-        ];
+        ]);
+      } else {
+        getOptions([]);
       }
-      return [];
     }
   }
   

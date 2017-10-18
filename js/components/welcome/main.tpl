@@ -78,6 +78,11 @@
     <li><span><i class="mintui-cirbreakhook"></i> mintui-cirbreakhook </span></li>
     <li><span><i class="mintui-loading"></i> mintui-loading </span></li>
     <li><span><i class="mintui-addcamera"></i> mintui-addcamera </span></li>
-    
+    <li><span><i class="mintui-view"></i> mintui-view </span></li>
+    <li><span><i class="mintui-close"></i> mintui-close </span></li>
+    <li><span><i class="mintui-document"></i> mintui-document </span></li>
+    <li><span><i class="mintui-delete2"></i> mintui-delete2 </span></li>
+    <li><span><i class="mintui-upload"></i> mintui-upload </span></li>
+
   </ul>
 </div>

@@ -41,7 +41,9 @@ define([
   'demo/field/main',
   'demo/badge/main',
   'demo/circle-step/main',
-  'demo/address/main'
+  'demo/address/main',
+  'demo/poplist/main',
+  'demo/upload/main'
 ], function(
   Vue, 
   MINT,
@@ -84,7 +86,9 @@ define([
   Field,
   Badge,
   CircleStep,
-  Address
+  Address,
+  Poplist,
+  Upload
 ) {
   'use strict';
   Vue.use(MINT); //使用框架组件
@@ -295,6 +299,16 @@ var router = new VueRouter({
       path: "/address",
       component: Address,
       name: "address"
+    },
+    {
+      path: "/poplist",
+      component: Poplist,
+      name: "poplist"
+    },
+    {
+      path: "/upload",
+      component: Upload,
+      name: "upload"
     }
   ]
 });
