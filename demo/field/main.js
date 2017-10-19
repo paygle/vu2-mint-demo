@@ -5,7 +5,17 @@ define([
   'use strict';
 
 return Vue.component('PageField', {
-  template: tpl
+  template: tpl,
+  data: function() {
+    return {
+      value: 'a'
+    };
+  },
+  methods: {
+    translate: function(setText, value) {
+      setText('这是翻译内容');
+    }
+  }
 });
 
 });

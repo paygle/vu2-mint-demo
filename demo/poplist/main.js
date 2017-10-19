@@ -9,8 +9,10 @@ return Vue.component('PagePoplist', {
   template: tpl,
   data: function() {
     return {
-      isOpen: false,
-      content: '',
+      isOpen1: false,
+      isOpen2: false,
+      content1: '',
+      content2: '',
       defaultResult: [
         {name: 'Apple'},
         {name: 'Banana'},
@@ -50,14 +52,21 @@ return Vue.component('PagePoplist', {
     };
   },
   methods: {
-    selectChanged: function(item) {
-      this.content = item.name || item;
-    },
     log: function(s) {
       console.log('Scope:', s);
     },
-    changePop: function() {
-      this.isOpen = !this.isOpen;
+
+    selectChanged1: function(item) {
+      this.content1 = item.name || item;
+    },
+    selectChanged2: function(item) {
+      this.content2 = item.name || item;
+    },
+    changePop1: function() {
+      this.isOpen1 = true;
+    },
+    changePop2: function() {
+      this.isOpen2 = true;
     }
   }
   

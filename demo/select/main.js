@@ -35,6 +35,9 @@ return Vue.component('PageSelect', {
     }
   },
   methods: {
+    getItems(items) {
+      console.log('items:', items);
+    },
     fillParamOptions: function(getOptions, param) {
       console.log('PARAM1:', param);
       getOptions([

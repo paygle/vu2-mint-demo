@@ -19,6 +19,7 @@
       label="类型" 
       placeholder="请输入类型"  
       v-model="selectM" 
+      @change="getItems"
       :fill-options="fillOptions" 
       :fill-params="combParam">
     </mo-select>

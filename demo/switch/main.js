@@ -8,10 +8,10 @@ return Vue.component('PageSwitch', {
   template: tpl,
   data: function(){
     return {
-      value1: false,
-      value2: false,
+      value1: '开森',
+      value2: 1,
       value3: true,
-      value4: true
+      value4: 'off'
     };
   },
   
