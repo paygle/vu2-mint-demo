@@ -1,6 +1,6 @@
 <div class="page-poplist">
   <h1 class="page-title">Poplist</h1>
-  <div class="page-poplist-wrapper">
+  <div class="page-poplist-wrapper" style="height: 1000px;">
     <mt-field label="选择输入1" v-model="content1">
       <img @click="changePop1" src="img//more.png" height="30px" width="30px">
     </mt-field>
