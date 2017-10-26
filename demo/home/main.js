@@ -35,6 +35,11 @@ return Vue.component('PageHome', {
               "icon": "cell"
             },
             {
+              "path": "/digital",
+              "name": "digital",
+              "icon": "cell"
+            },
+            {
               "path": "/address",
               "name": "address",
               "icon": "cell"

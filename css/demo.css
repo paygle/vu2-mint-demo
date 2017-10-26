@@ -471,6 +471,13 @@ a {
   margin-bottom: 20px;
 }
 
+.page-digital-wrapper {
+  padding: 0 20px;
+}
+.page-digital-wrapper button:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .page-spinner .mint-cell {
   min-height: 50px;
 }

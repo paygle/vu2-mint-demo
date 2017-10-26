@@ -1,8 +1,13 @@
 define([
   'vue',
-  'text!demo/field/main.tpl'
+  'text!demo/digital/main.tpl'
 ], function(Vue, tpl) {
   'use strict';
+
+/** mo-digital 下拉组件属性
+ * 
+
+ */
 
 /* 验证规则数据格式
 [
@@ -23,43 +28,47 @@ define([
   }
 ]
 */
-
-return Vue.component('PageField', {
+return Vue.component('PageDigital', {
   template: tpl,
-  data: function() {
+  data: function(){
+
     var validate = {
       required: true,
-      type: 'ident',    //可选类型： 
-      field: 'email',
+      type: 'number',
+      field: 'num',
       validators: [
         {
           rule: /\d/g, 
           msg: '这个是错的'
         },
         {
-          validator: function(value, callback){
+          validator: (value, callback)=>{
             callback('外面验证错误');
             console.log('valid msg', value);
           }
         }
       ]
     };
+
     return {
       value: 'a',
-      email: '',
+      num: 23456789003,
       validStatus: {},
       validate: validate
     };
   },
   methods: {
-    translate: function(setText, value) {
-      setText('这是翻译内容');
-    },
     updateValidate: function(field, isInvalid) {
       this.validStatus[field] = isInvalid;
-      console.log('update validate', field, isInvalid);
+      console.log('digital validate', field, isInvalid);
+    },
+    submit: function() {
+      if (this.$refs.digital.verifySubmit(this.validStatus)) {
+        alert('验证通过');
+      }
     }
   }
+  
 });
 
 });

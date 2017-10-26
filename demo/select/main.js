@@ -20,16 +20,14 @@ define([
     required: false,     // 仅当前结点有效
     type: 'number',      // 仅当前结点有效,可选：number, date, email, phone, ident（身份证）
     field: 'name',       // 当前使用 validators 时，仅此字段有效
-    rule:/\d/ig, 
-    msg:'这个是错的', 
-    validator: function(value,callback){ callback(msg);}
+    // rule:/\d/ig, 
+    // msg:'这个是错的', 
+    // validator: function(value,callback){ callback(msg);}    // 此验证单独使用
     validators: [
       {
-        required: false, 
-        field: 'name', 
-        rule:/\d/ig, 
-        msg:'这个是错的', 
-        validator: function(value,callback){ callback(msg);}
+        rule:/\d/ig,        // 自定义规则验证
+        msg:'这个是错的',    // 自定义规则消息
+        validator: function(value,callback){ callback(msg);}   // 此验证单独使用
       }
     ]
   }
@@ -48,7 +46,7 @@ return Vue.component('PageSelect', {
           msg: '这个是错的'
         },
         {
-          validator: (value, callback)=>{
+          validator: function(value, callback) {
             callback('外面验证错误');
             console.log('valid msg', value);
           }

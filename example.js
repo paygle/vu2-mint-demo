@@ -43,7 +43,8 @@ define([
   'demo/circle-step/main',
   'demo/address/main',
   'demo/poplist/main',
-  'demo/upload/main'
+  'demo/upload/main',
+  'demo/digital/main'
 ], function(
   Vue, 
   MINT,
@@ -88,7 +89,8 @@ define([
   CircleStep,
   Address,
   Poplist,
-  Upload
+  Upload,
+  Digital
 ) {
   'use strict';
   Vue.use(MINT); //使用框架组件
@@ -309,6 +311,11 @@ var router = new VueRouter({
       path: "/upload",
       component: Upload,
       name: "upload"
+    },
+    {
+      path: "/digital",
+      component: Digital,
+      name: "digital"
     }
   ]
 });

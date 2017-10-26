@@ -31,7 +31,7 @@ return Vue.component('PageAdress', {
           msg: '这个是错的'
         },
         {
-          validator: (value, callback)=>{
+          validator: function(value, callback) {
             callback('外面验证错误');
             console.log('valid msg', value);
           }
@@ -41,6 +41,7 @@ return Vue.component('PageAdress', {
 
     return {
       addr: '21-2101-210101',
+      validStatus: {},
       validate: validate,
       adrdata: JSON.parse(addrData)
     };
@@ -53,6 +54,7 @@ return Vue.component('PageAdress', {
   },
   methods: {
     updateValidate: function(field, isInvalid) {
+      this.validStatus[field] = isInvalid;
       console.log('address validate', field, isInvalid);
     }
   }
