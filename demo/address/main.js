@@ -21,8 +21,27 @@ define([
 return Vue.component('PageAdress', {
   template: tpl,
   data: function(){
+
+    var validate = [{
+      required: true,
+      field: 'addr',
+      validators: [
+        {
+          rule: /\d/g, 
+          msg: '这个是错的'
+        },
+        {
+          validator: (value, callback)=>{
+            callback('外面验证错误');
+            console.log('valid msg', value);
+          }
+        }
+      ]
+    }];
+
     return {
       addr: '21-2101-210101',
+      validate: validate,
       adrdata: JSON.parse(addrData)
     };
   },
@@ -30,6 +49,11 @@ return Vue.component('PageAdress', {
   watch: {
     addr: function(val) {
       console.log('地址值：', val);
+    }
+  },
+  methods: {
+    updateValidate: function(field, isInvalid) {
+      console.log('address validate', field, isInvalid);
     }
   }
   

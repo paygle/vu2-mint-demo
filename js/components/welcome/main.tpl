@@ -83,6 +83,8 @@
     <li><span><i class="mintui-document"></i> mintui-document </span></li>
     <li><span><i class="mintui-delete2"></i> mintui-delete2 </span></li>
     <li><span><i class="mintui-upload"></i> mintui-upload </span></li>
+    <li><span><i class="mintui-percent"></i> mintui-percent </span></li>
+    <li><span><i class="mintui-permillage"></i> mintui-permillage </span></li>
 
   </ul>
 </div>

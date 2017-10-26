@@ -8,7 +8,13 @@
       :translate="translate"
       :attr="{ maxlength: 10 }">
     </mt-field>
-    <mt-field label="邮箱" placeholder="请输入邮箱" type="email"></mt-field>
+    <mt-field 
+      label="邮箱" 
+      placeholder="请输入邮箱" 
+      type="email" v-model="email" 
+      :validate="validate" 
+      @update-validate="updateValidate">
+    </mt-field>
     <mt-field label="密码" placeholder="请输入密码" type="password"></mt-field>
     <mt-field label="手机号" placeholder="请输入手机号" type="tel"></mt-field>
     <mt-field label="网站" placeholder="请输入网址" type="url"></mt-field>

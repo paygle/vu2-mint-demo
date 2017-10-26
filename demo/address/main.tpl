@@ -8,7 +8,10 @@
       confirm-text="选择"
       :visible-item-count="5"
       v-model="addr" 
-      :data="adrdata">
+      :data="adrdata"
+      :validate="validate" 
+      field="addr"
+      @update-validate="updateValidate">
     </mo-address>
   </div>
 </div>

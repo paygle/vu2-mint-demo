@@ -12,7 +12,9 @@
       label="参数" 
       placeholder="请输入类型"  
       v-model="selectp" 
-      :fill-options="fillParamOptions">
+      :fill-options="fillParamOptions"
+      :validate="validate" 
+      @update-validate="updateValidate">
     </mo-select>
 
     <mo-select
@@ -21,8 +23,11 @@
       v-model="selectM" 
       @change="getItems"
       :fill-options="fillOptions" 
-      :fill-params="combParam">
+      :fill-params="combParam"
+      ref="vsel"
+      :validate="validate" 
+      @update-validate="updateValidate">
     </mo-select>
-
+    <mt-button type="primary" @click="submit">提交</mt-button>
   </div>
 </div>
