@@ -52,7 +52,7 @@ return Vue.component('PageDigital', {
 
     return {
       value: 'a',
-      num: 23456789003,
+      num: 23456789.435,
       validStatus: {},
       validate: validate
     };
